@@ -42,7 +42,7 @@ public:
 	void setVelocity(glm::vec2 newVelocity);
 	void setIsColliding(bool collision);
 	void setType(GameObjectType newType);
-	void setState(SteeringState newState);
+	void setSteeringState(SteeringState newState);
 	void setAcceleration(glm::vec2 newAcceleration);
 
 

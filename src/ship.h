@@ -24,20 +24,37 @@ public:
 	void turnLeft();
 	void move();
 
+	// getters
+	glm::vec2 getTargetPosition();
+	glm::vec2 getCurrentDirection();
+	float getMaxSpeed();
+
+	// setters
+	void setTargetPosition(glm::vec2 newPosition);
+	void setCurrentDirection(glm::vec2 newDirection);
+	void setMaxSpeed(float newSpeed);
+
 private:
 	
-	void m_checkState();
-	void m_checkBounds();
-
-	void m_reset();
-
-	// steering behaviours
+	// steering behaviour functions
+	void m_checkSteeringState();
 	void m_seek();
+	void m_checkArrival();
+
+	// ship movement
+	void m_checkBounds();
+	void m_reset();
 	float m_maxSpeed;
-	double m_currentDirection;
-	float m_turnSpeed;
-	float m_steerForce;
-	glm::vec2 m_target;
+	float m_turnRate;
+
+	void m_changeDirection();
+	float m_currentHeading;
+	glm::vec2 m_currentDirection;
+	
+	// target info
+	glm::vec2 m_targetPosition;
+	glm::vec2 m_targetDirection;
+	void m_computeTargetDirection();
 };
 
 

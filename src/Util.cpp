@@ -260,4 +260,11 @@ float Util::dot(glm::vec2 lhs, glm::vec2 rhs)
 	return lhs.x * rhs.x + lhs.y * rhs.y;
 }
 
+float Util::signedAngle(glm::vec2 from, glm::vec2 to)
+{
+	float unsigned_angle = Util::angle(from, to);
+	float sign = Util::sign(from.x * to.y - from.y * to.x);
+	return unsigned_angle * sign;
+}
+
 

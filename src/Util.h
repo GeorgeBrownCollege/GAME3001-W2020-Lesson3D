@@ -36,6 +36,7 @@ public:
 	static glm::vec2 normalize(glm::vec2 vec);
 	static float angle(glm::vec2 from, glm::vec2 to);
 	static float dot(glm::vec2 lhs, glm::vec2 rhs);
+	static float signedAngle(glm::vec2 from, glm::vec2 to);
 
 
 
