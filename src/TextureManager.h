@@ -18,6 +18,9 @@ class TextureManager {
 public:
 	static TextureManager* Instance()
 	{
+		static TextureManager instance = TextureManager();
+		return &instance;
+
 		if (s_pInstance == 0)
 		{
 			s_pInstance = new TextureManager();

@@ -179,6 +179,9 @@ void ship::m_changeDirection()
 	float x = cos(m_currentHeading * Util::Deg2Rad);
 	float y = sin(m_currentHeading * Util::Deg2Rad);
 	m_currentDirection = glm::vec2(x, y);
+
+	glm::vec2 size = TheTextureManager::Instance()->getTextureSize("ship");
+	std::cout << size.x << " " << size.y << std::endl;
 }
 
 

@@ -96,13 +96,14 @@ void Game::render()
 	m_pTarget->draw();
 	m_pShip->draw();
 
+	//Util::DrawRect(m_pShip->getPosition() - glm::vec2(m_pShip->getWidth() * 0.5, m_pShip->getHeight() * 0.5), m_pShip->getWidth(), m_pShip->getHeight());
+
 	SDL_RenderPresent(m_pRenderer); // draw to the screen
 }
 
 void Game::update()
 {
 	
-
 	m_pShip->update();
 
 	m_pTarget->update();

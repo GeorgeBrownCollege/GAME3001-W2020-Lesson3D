@@ -34,7 +34,6 @@ int main(int argc, char * args[])
 	AllocConsole();
 	freopen("CON", "w", stdout);
 
-
 	TheGame::Instance()->init("Hello World", 100, 100, 800, 600, false);
 
 	while (TheGame::Instance()->running())
@@ -50,7 +49,6 @@ int main(int argc, char * args[])
 		{
 			SDL_Delay((int)(DELAY_TIME - frameTime));
 		}
-
 	}
 
 	TheGame::Instance()->clean();
