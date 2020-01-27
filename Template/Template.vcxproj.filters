@@ -107,5 +107,11 @@
     <ClInclude Include="..\src\SteeringState.h">
       <Filter>Enums</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\CollisionShape.h">
+      <Filter>Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ShapeType.h">
+      <Filter>Enums</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

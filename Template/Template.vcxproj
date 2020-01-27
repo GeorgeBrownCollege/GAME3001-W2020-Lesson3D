@@ -173,12 +173,14 @@
   <ItemGroup>
     <ClInclude Include="..\src\Cloud.h" />
     <ClInclude Include="..\src\CollisionManager.h" />
+    <ClInclude Include="..\src\CollisionShape.h" />
     <ClInclude Include="..\src\Game.h" />
     <ClInclude Include="..\src\GameObject.h" />
     <ClInclude Include="..\src\GameObjectType.h" />
     <ClInclude Include="..\src\Island.h" />
     <ClInclude Include="..\src\Ocean.h" />
     <ClInclude Include="..\src\Player.h" />
+    <ClInclude Include="..\src\ShapeType.h" />
     <ClInclude Include="..\src\ship.h" />
     <ClInclude Include="..\src\SoundManager.h" />
     <ClInclude Include="..\src\SteeringState.h" />
